@@ -36,6 +36,10 @@ app.all("*", (req, res) => {
   res.status(404).json({ error: "This route does not exist." });
 });
 
+app.all("*", (req, res) => {
+  res.status(404).json({ error: "This route does not exist." });
+});
+
 app.listen(process.env.PORT, () => {
   console.log("Server started.");
 });
